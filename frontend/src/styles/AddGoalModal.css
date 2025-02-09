@@ -1,0 +1,157 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    padding: 1rem;
+  }
+  
+  .modal {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    width: 100%;
+    max-width: 500px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .modal-header h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #7f8c8d;
+    transition: color 0.3s ease;
+  }
+  
+  .close-button:hover {
+    color: #34495e;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group label {
+    display: block;
+    color: #34495e;
+    font-size: 0.95rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #2c3e50;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #8e44ad;
+  }
+  
+  .modal-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+  
+  .modal-actions button {
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .cancel-button {
+    background: #f5f6fa;
+    color: #2c3e50;
+  }
+  
+  .cancel-button:hover {
+    background: #e0e0e0;
+  }
+  
+  .submit-button {
+    background: linear-gradient(135deg, #301E67, #751d6c);
+    color: white;
+  }
+  
+  .submit-button:hover {
+    background: #6c3483;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .modal {
+      padding: 1.5rem;
+    }
+  
+    .modal-header h3 {
+      font-size: 1.3rem;
+    }
+  
+    .form-group {
+      margin-bottom: 1rem;
+    }
+  
+    .form-group input {
+      padding: 0.6rem;
+    }
+  
+    .modal-actions button {
+      padding: 0.6rem 1.2rem;
+      font-size: 0.95rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .modal-overlay {
+      padding: 0.5rem;
+    }
+  
+    .modal {
+      padding: 1rem;
+    }
+  
+    .modal-header h3 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    
+    .form-group label {
+      font-size: 0.9rem;
+    }
+  
+    .form-group input {
+      font-size: 0.95rem;
+    }
+  }
